@@ -1,0 +1,150 @@
+/* pages/activity/activity.wxss */
+page{
+  background-color: white;
+
+}
+
+.act{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-bottom:1rpx solid #eeeeee; 
+}
+
+.left{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.right{
+  width: 80%;
+}
+
+.name{
+  color: #2664b6;
+  font-weight: 600;
+  margin-bottom: 10rpx;
+}
+
+.text{
+  margin-bottom: 10rpx;
+}
+
+.shortImgs{
+  width: 330rpx;
+}
+
+.picArr{
+  display: inline-block;
+  height: 160rpx;
+  width: 160rpx;
+}
+
+.pic{
+  height: 150rpx;
+  width: 150rpx;
+  margin-right: 10rpx;
+}
+
+.bottom{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time{
+  color: #888888;
+  font-size:30rpx;
+}
+
+.star{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right:10px; 
+  font-size:15px;
+
+}
+
+.picker{
+font-size:15px;
+width:56px;
+position:absolute;
+margin-top:60px;
+margin-left:-68px;
+color: #6a03af
+}
+
+.pickerText{
+  text-align: center;
+  width: 100rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-bottom: 5rpx solid #6a03af;
+}
+
+.pickerImg{
+  width: 21rpx;
+  height: 15rpx;
+  margin-left: 10rpx;
+}
+
+.picker_chosen{
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.picker_son{
+  padding: 10rpx;
+  padding-right: 35rpx;
+}
+
+.picone{
+  width:300rpx;
+  height: 300rpx;
+  margin-right: 10rpx;
+}
+.hdstatus_inner{
+  font-size:35rpx;
+  position:absolute;
+  right:30rpx;
+  color: #888888;
+}
+
+.starNum{
+  color: #888888;
+  font-size: 30rpx;
+}
+
+
+.operateimg{
+  margin: 10rpx;
+  width: 50rpx;
+  height: 50rpx;
+  opacity: 0.5;
+}
+
+.waiting{
+  color: #888888;
+}
+
+.accept{
+  color: #25c525;
+}
+
+.deny{
+  color: #dd2a33;
+}

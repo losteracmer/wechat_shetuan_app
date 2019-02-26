@@ -1,0 +1,148 @@
+/* pages/activity/activity.wxss */
+page{
+  background-color: white;
+
+}
+
+.part1{
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.part2{
+  margin-top: 80rpx;
+}
+
+.main{
+  padding-top: 20rpx;
+}
+
+
+
+.act{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-bottom:1rpx solid #eeeeee; 
+}
+
+.left{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.right{
+  width: 80%;
+}
+
+.name{
+  color: #2664b6;
+  font-weight: 600;
+  margin-bottom: 10rpx;
+}
+
+.text{
+  margin-bottom: 10rpx;
+}
+
+.shortImgs{
+  width: 330rpx;
+}
+
+.picArr{
+  display: inline-block;
+  height: 160rpx;
+  width: 160rpx;
+}
+
+.pic{
+  height: 150rpx;
+  width: 150rpx;
+  margin-right: 10rpx;
+}
+
+.bottom{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time{
+  color: #888888;
+  font-size: 30rpx;
+}
+
+.star{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right:10rpx; 
+}
+
+.starimg{
+  width: 50rpx;
+  height: 50rpx; 
+}
+
+.starNum{
+  font-size: 30rpx;
+}
+
+.picker{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding-bottom: 10rpx;
+}
+
+.pickerText{
+  text-align: center;
+  width: 100rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-bottom: 5rpx solid #d4a3f5;
+}
+
+.pickerImg{
+  width: 21rpx;
+  height: 15rpx;
+  margin-left: 10rpx;
+}
+
+.picker_chosen{
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.picker_son{
+  padding: 10rpx;
+  padding-right: 35rpx;
+}
+
+.picone{
+  width:300rpx;
+  height: 300rpx;
+  margin-right: 10rpx;
+}
+
+.starNum{
+  color: #888888;
+}

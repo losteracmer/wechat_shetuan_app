@@ -1,0 +1,54 @@
+<!--pages/community/community.wxml-->
+<!-- <view class='search'>
+  <image src="../../image/search.png"></image>
+</view> -->
+
+<!--圆形点击框  -->
+
+<view class="round-click" bindtap='search'>
+  <view>搜索</view>
+</view>
+<!-- <view class='loadImage' wx:if="{{load}}"><image class="waiting" src='../../image/waiting.gif'></image></view> -->
+
+<scroll-view class="navbar" scroll-x scroll-with-animation>
+
+  <view class="kind">
+    <view class="item">
+      <picker bindchange="changexiaoqu" value="{{index}}" range="{{xiaoqu}}" data-hdid='{{item.hdID}}' data-index='{{index}}'>
+        <image class='xiaoquimg' src='{{xiaoquimg}}'></image>
+      </picker>
+    </view>
+    <block class="choose" wx:for="{{navbar}}" wx:key="*this">
+      <view data-idx="{{index}}" class="item {{currentTab==index ?   'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</view>
+    </block>
+  </view>
+</scroll-view>
+
+
+<swiper class="swip" current="{{currentTab}}" indicator-dots="{{false}}" autoplay="{{false}}" bindchange="contentChange">
+  <block wx:for="{{navbar}}" wx:key="*this">
+
+    <swiper-item>
+      <scroll-view class="content" scroll-y scroll-with-animation bindscrolltolower="bindDownLoad" bindscrolltoupper="bindTopLoad" >
+        <block wx:for="{{comm}}" wx:for-item="comm" wx:key="*this">
+          <view class="card">
+            <view class="cardcon" bindtap='gotodetail' id='{{index}}'>
+              <image class="cardImage" src="{{comm.profile+'?ys=1'}}" mode="scaleToFill"></image>
+              <view class="textcon">
+                <view class="cardName textover">
+                  {{comm.name}}
+                </view>
+                <view class="cardWords textover">
+                  {{comm.brief}}
+                </view>
+                <view class='xiaoqu'>
+                  <text>{{comm.xiaoqu}}</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </block>
+      </scroll-view>
+    </swiper-item>
+  </block>
+</swiper>

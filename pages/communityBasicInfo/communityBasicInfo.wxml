@@ -1,0 +1,24 @@
+<view class='main'>
+
+  <view class='divs logo' bindtap='changelogo'>
+    <text>社团logo</text>
+    <image class="arrow" src="../../image/grayarrow-right.png"></image>
+  </view>
+  <view class='divs bri' bindtap='changebri'>
+    <text>社团简介(需审核)</text>
+    <image class="arrow" src="../../image/grayarrow-right.png"></image>
+  </view>
+  <view class='divs bri' bindtap='changejphd'>
+    <text>精品活动(需审核)</text>
+    <image class="arrow" src="../../image/grayarrow-right.png"></image>
+  </view>
+  <view class='divs bri' bindtap='changezyfzr'>
+    <text>社团主要负责人</text>
+    <image class="arrow" src="../../image/grayarrow-right.png"></image>
+  </view>
+  <view class='divs con' bindtap='changecon'>
+    <text>联系信息</text>
+    <image class="arrow" src="../../image/grayarrow-right.png"></image>
+  </view>
+
+</view>

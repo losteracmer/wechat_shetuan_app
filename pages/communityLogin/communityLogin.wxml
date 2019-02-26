@@ -1,0 +1,21 @@
+<!--pages/communityLogin/communityLogin.wxml-->
+<view class='main'>
+  <view class='content'>
+    <form catchsubmit="formSubmit" catchreset="formReset">
+      <view class='cell'>
+        <input type='text' class='cellinput up' name='account' placeholder-class='pla' placeholder='账号' value='{{account}}'></input>
+      </view>
+      <view class="cell">
+        <input type='password' class='cellinput down' name='password' placeholder-class='pla' placeholder='密码' value='{{passwd}}'></input>
+      </view>
+      <button class="login" formType="submit">
+        <text>登录</text>
+      </button>
+    </form>
+  </view>
+  <view class='text'>
+    <text class='find' bindtap='changePassword'>忘记密码</text>
+    <text class='add' bindtap='createaccount'>注册账号</text>
+  </view>
+
+</view>

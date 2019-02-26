@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/community/community",
+    "pages/activity/activity",
+    "pages/communityInfo/communityInfo",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/myInfo/myInfo",
+    "pages/communityLogin/communityLogin",
+    "pages/communityManager/communityManager",
+    "pages/communityBasicInfo/communityBasicInfo",
+    "pages/sendActivity/sendActivity",
+    "pages/changePassword/changePassword",
+    "pages/forgetPassword/forgetPassword",
+    "pages/search/search",
+    "pages/avatarUpload/index/index",
+    "pages/avatarUpload/upload/upload",
+    "pages/myActivity/myActivity",
+    "pages/mymsg/mymsg",
+    "pages/communityTable/communityTable",
+    "pages/change/change",
+    "pages/operateaccount/operateaccount"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#aaaaaa",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/community/community",
+        "text": "社团",
+        "iconPath": "image/Connect1.png",
+        "selectedIconPath": "image/Connect2.png"
+      },
+      {
+        "pagePath": "pages/activity/activity",
+        "text": "活动",
+        "iconPath": "image/Connect1.png",
+        "selectedIconPath": "image/Connect2.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "image/Connect1.png",
+        "selectedIconPath": "image/Connect2.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 3000
+  }
+}

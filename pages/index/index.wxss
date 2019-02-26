@@ -1,0 +1,93 @@
+/**index.wxss**/
+
+.container {
+  padding: 0;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1rpx solid #eee;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 50rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  margin-bottom: 40rpx;
+}
+
+.bottompart {
+  border-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  width: 100%;
+}
+
+.bbottomview {
+  background-color: white;
+  width: 100%;
+  height: 88rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #eee;
+  box-sizing: border-box;
+  padding-left: 20rpx;
+  padding-right: 10rpx;
+}
+
+.arrow {
+  width: 45rpx;
+  height: 40rpx;
+}
+
+.userInfoButton {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+}
+
+.communityInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.communityImage {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 50rpx;
+  border-radius: 50%;
+}
+
+.communityName {
+  color: #aaa;
+  margin-bottom: 40rpx;
+}
+
+.logout{
+  width: 100%;
+  margin-top: 20rpx;
+  color: red;
+  background-color: white;
+  border-radius: 0;
+}

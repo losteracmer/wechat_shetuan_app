@@ -1,0 +1,37 @@
+<view  wx:for="{{change}}" wx:key="*this">
+  <view class='card'>
+
+    <view class='profile'>
+      <image class='profile' src='{{item.profile}}'></image>
+    </view>
+
+    <view class='left'>
+
+
+      <view class='top'>
+        <view class='name'>{{item.name}}</view>
+        <view class='sta'>
+          <view class='status waiting' wx:if="{{item.cgstatus==2}}">[待审核]</view>
+          <view class='status accept' wx:if="{{item.cgstatus==1}}">[已通过]</view>
+          <view class='status deny' wx:if="{{item.cgstatus==0}}">[已拒绝]</view>
+        </view>
+      </view>
+
+      <view id='{{item.cgid}}' class="cgtype kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap='kindToggle' >
+        <view hidden="{{item.cgtype!='brief'}}">修改社团简介：</view>
+        <view hidden="{{item.cgtype!='jphd'}}">修改精品活动：</view>
+        <image src="{{item.open?'../../image/Flap3.png':'../../image/Flap.png'}}" class='kind-list-img'></image>
+      </view>
+
+      <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : ''}}">
+        <view class='msg'>{{item.text}}</view>
+
+        <view class='operate' hidden='{{!issuper || item.cgstatus !=2}}'>
+          <picker bindchange="changemsg" value="{{index}}" range="{{operate}}" data-cgid='{{item.cgid}}' data-index='{{index}}'>
+            <image class='operateimg' src="../../image/delete.png"></image>
+          </picker>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

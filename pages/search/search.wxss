@@ -1,0 +1,146 @@
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: white;
+}
+
+.search {
+  width: 650rpx;
+  height: 70rpx;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  border: 1rpx solid #d0d0d0;
+}
+
+.search input {
+  height: 70rpx;
+}
+
+.plakey {
+  font-size: 35rpx;
+}
+
+.searchcion {
+  margin: 15rpx 15rpx 15rpx 20rpx;
+  width: 20px;
+  height: 20px;
+}
+
+.history {
+  margin: 15rpx;
+}
+
+.his_top{
+  width: 650rpx;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sousuoHistoryText{
+  font-size: 40rpx;
+  display: inline-block;
+  width: 400rpx;
+  color: #555555;
+}
+
+.his_bot{
+  width: 650rpx;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sh{
+  font-size: 40rpx;
+  width: auto;
+  color: #888888;
+}
+
+.result {
+  margin: 15rpx;
+}
+
+.card {
+  border-radius: 15rpx;
+  width: 94%;
+  height: 200rpx;
+  background-color: #ffffff;
+  margin-bottom: 3%;
+  margin-left: 3%;
+}
+
+.cardcon {
+  display: flex;
+  flex-direction: row;
+}
+
+.cardImage {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  margin: 25rpx;
+}
+
+.textcon {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50rpx;
+  margin-top: 10rpx;
+}
+
+.cardName{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 15pt;
+  font-weight: 500;
+}
+
+.cardWords{
+  height: 50rpx;
+  width: 350rpx;
+  line-height: 50rpx;
+  font-size: 28rpx;
+  color: grey;
+}
+
+.waiting{
+  position: absolute;
+  height: 100rpx;
+  width: 100rpx;
+  bottom: 50%;
+  left: 45%;
+}
+
+
+
+.xiaoqu text{
+  font-size: 25rpx;
+  color: grey;
+  border-radius: 10rpx;
+}
+
+.textover{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 400rpx;
+}
+.waiting {
+  position: absolute;
+  height: 100rpx;
+  width: 100rpx;
+  bottom: 50%;
+  left: 45%;
+}
+
+
+.delect{
+  height: 60rpx;
+  width: 60rpx;
+  display: inline-block;
+}

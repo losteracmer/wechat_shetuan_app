@@ -1,0 +1,7 @@
+<!--pages/admin/admin.wxml-->
+<text>欢迎某某社团管理</text>
+
+<view class='main'>
+  <view class='msg'>这里可能用于显示一些信息</view>
+
+</view>

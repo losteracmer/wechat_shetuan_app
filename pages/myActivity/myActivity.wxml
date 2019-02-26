@@ -1,0 +1,49 @@
+<view class='main' wx:for="{{activities}}" wx:key="*this">
+  <view class='act'>
+
+    <view class="left" bindtap='gotodetail' data-commid="{{item.shetuanID}}">
+      <image class="profile" src="{{item.profile+'?ys=1'}}" mode="scaleToFill"></image>
+    </view>
+
+    <view class='hdstatus'>
+      <!-- 活动的状态，是发布，还是，等待审核 -->
+      <view class='hdstatus_inner accept' wx:if="{{item.hdstatus==1}}">[已发布]</view>
+      <view class='hdstatus_inner waiting' wx:if="{{item.hdstatus==0}}">[待审核]</view>
+      <view class='hdstatus_inner deny' wx:if="{{item.hdstatus==2}}">[已删除]</view>
+    </view>
+
+    <view class='right'>
+      <view class="name" bindtap='gotodetail' data-commid="{{item.shetuanID}}">{{item.NAME}}</view>
+      <view class="text">{{item.content}}</view>
+      <view class='shortzero' wx:if="{{item.images.length==0}}"></view>
+      <view class="shortImgs" wx:if="{{item.images.length==1}}">
+        <view class='picArr' wx:for="{{item.images}}" wx:for-item="items" wx:key="*this">
+          <image class='picone' src="{{items+'?ys=1'}}" mode="aspectFill" bindtap='previewImage' data-list="{{item.images}}" data-src='{{items}}'></image>
+        </view>
+      </view>
+      <view class="shortImgs" wx:if="{{item.images.length==4}}">
+        <view class='picArr' wx:for="{{item.images}}" wx:for-item="items" wx:key="*this">
+          <image class='pic' src="{{items+'?ys=1'}}" mode="aspectFill" bindtap='previewImage' data-list="{{item.images}}" data-src='{{items}}'></image>
+        </view>
+      </view>
+
+      <view class="longImgs" wx:if="{{item.images.length!=4&&item.images.length!=1&&item.images.length!=0}}">
+        <view class='picArr' wx:for="{{item.images}}" wx:key="*this" wx:for-item="items">
+          <image bindtap='previewImage' class='pic' src="{{items+'?ys=1'}}" mode="aspectFill" data-list="{{item.images}}" data-src='{{items}}'></image>
+        </view>
+
+      </view>
+
+      <view class='bottom'>
+        <view class="time">{{item.hdtime}}</view>
+        <view class='starNum'>点赞人数: {{item.hddz}}</view>
+        <view class='operate' >
+          <picker bindchange="changeactivities" value="{{index}}" range="{{operate}}" data-hdid='{{item.hdID}}' data-index='{{index}}'>
+            <image class='operateimg' src='../../image/delete.png'></image>
+          </picker>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>

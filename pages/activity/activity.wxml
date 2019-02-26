@@ -1,0 +1,53 @@
+<view class='part1'>
+  <view class='picker'>
+    <view class='pickerText' bindtap='showPicker'>{{array[idx]}}</view>
+    <image class="pickerImg" src='../../image/arrowDown.png'></image>
+  </view>
+  <view class='picker_chosen' wx:for="{{array}}" hidden='{{hide==0}}' wx:key="*this">
+    <view class='picker_son' data-idx='{{index}}' bindtap='changeIdx'>
+      {{array[index]}}
+    </view>
+  </view>
+</view>
+
+
+
+<view class='part2'>
+
+  <view class='main' wx:for="{{activities}}" wx:key="*this">
+    <view class='act'>
+      <view class="left" bindtap='gotodetail' data-commid="{{item.shetuanID}}">
+        <image class="profile" src="{{item.profile+'?ys=1'}}" mode="scaleToFill"></image>
+      </view>
+      <view class='right'>
+        <view class="name" bindtap='gotodetail' data-commid="{{item.shetuanID}}">{{item.NAME}}</view>
+        <view class="text">{{item.content}}</view>
+        <view class='shortzero' wx:if="{{item.images.length==0}}"></view>
+        <view class="shortImgs" wx:if="{{item.images.length==1}}">
+          <view class='picArr' wx:for="{{item.images}}" wx:for-item="items" wx:key="*this">
+            <image class='picone' src="{{items+'?ys=1'}}" mode="aspectFill" bindtap='previewImage' data-list="{{item.images}}" data-src='{{items}}'></image>
+          </view>
+        </view>
+        <view class="shortImgs" wx:if="{{item.images.length==4}}">
+          <view class='picArr' wx:for="{{item.images}}" wx:for-item="items" wx:key="*this">
+            <image class='pic' src="{{items+'?ys=1'}}" mode="aspectFill" bindtap='previewImage' data-list="{{item.images}}" data-src='{{items}}'></image>
+          </view>
+        </view>
+        <view class="longImgs" wx:if="{{item.images.length!=4&&item.images.length!=1&&item.images.length!=0}}">
+          <view class='picArr' wx:for="{{item.images}}" wx:key="*this" wx:for-item="items">
+            <image bindtap='previewImage' class='pic' src="{{items+'?ys=1'}}" mode="aspectFill" data-list="{{item.images}}" data-src='{{items}}'></image>
+          </view>
+
+        </view>
+        <view class='bottom'>
+          <view class="time">{{item.hdtime}}</view>
+          <view bindtap='previewImage' class="star" bindtap='starOrNot' id="{{index}}" data-hdID="{{item.hdID}}" data-is="{{item.star}}">
+            <image class='starimg' wx:if="{{item.star}}" src='../../image/Connect2.png'></image>
+            <image class='starimg' wx:else src='../../image/Connect1.png'></image>
+            <view class='starNum'>{{item.hddz}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

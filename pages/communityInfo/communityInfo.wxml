@@ -1,0 +1,95 @@
+<!--pages/communityInfo/communityInfo.wxml-->
+<view class="main">
+
+  <view class="head">
+    <view class="communityprofile">
+      <image class="imgProfile" src="{{profile+'?ys=1'}}" mode="scaleToFill"></image>
+    </view>
+    <view class="topword">
+      <text class=" communityname">{{name}}</text>
+    </view>
+
+    <view class="topword">
+      <text>关注 ： {{like}}</text>
+    </view>
+  </view>
+
+  <view class="navbar">
+    <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ?   'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+  </view>
+
+  <view class="page1" hidden="{{currentTab!=0}}">
+
+    <view class="info">
+      <text class="bottitle">社团类别 ： </text>
+      <text class="botword">{{kinds}}</text>
+    </view>
+    <view class="info">
+      <text class="bottitle">所在校区 ： </text>
+      <text class="botword">{{xiaoqu}}</text>
+    </view>
+    <view class="info">
+      <text class="bottitle">社团成员 ： </text>
+      <text class="botword">{{member}}</text>
+    </view>
+    <view class="info">
+      <text class="bottitle">社团简介 ： </text>
+      <text class="botword">{{brief}}</text>
+    </view>
+      <view class="info" hidden="{{jphd=='NULL' || jphd==null}}">
+      <text class="bottitle">精品活动 ： </text>
+      <text class="botword">{{jphd}}</text>
+    </view>
+    <view class="info" hidden="{{zyfzr=='NULL' || zyfzr==null}}">
+      <text class="bottitle">主要负责人 ： </text>
+      <text class="botword">{{zyfzr}}</text>
+    </view>
+    <view class="info" hidden="{{zyfzr=='NULL' || zyfzr==null}}">
+      <text class="bottitle">联系方式 ： </text>
+      <text class="botword">{{contact}}</text>
+    </view>
+  </view>
+
+  <view class="page2" hidden="{{currentTab!=1}}">
+    <view class='main' wx:for="{{activities}}" wx:key="*this">
+      <view class='act'>
+        <view class="left" data-commid="{{item.shetuanID}}">
+          <image class="profile" src="{{item.profile+'?ys=1'}}" mode="scaleToFill"></image>
+        </view>
+        <view class='right'>
+          <view class="name" bindtap='gotodetail' data-commid="{{item.shetuanID}}">{{item.name}}</view>
+          <view class="text">{{item.content}}</view>
+          <view class='shortzero' wx:if="{{item.images.length==0}}"></view>
+          <view class="shortImgs" wx:if="{{item.images.length==1}}">
+            <view class='picArr' wx:for="{{item.images}}" wx:for-item="items" wx:key="*this">
+              <image class='picone' src="{{items+'?ys=1'}}" mode="aspectFill" bindtap='previewImage' data-list="{{item.images}}" data-src='{{items}}'></image>
+            </view>
+          </view>
+          <view class="shortImgs" wx:if="{{item.images.length==4}}">
+            <view class='picArr' wx:for="{{item.images}}" wx:for-item="items" wx:key="*this">
+              <image class='pic' src="{{items+'?ys=1'}}" mode="aspectFill" bindtap='previewImage' data-list="{{item.images}}" data-src='{{items}}'></image>
+            </view>
+          </view>
+          <view class="longImgs" wx:if="{{item.images.length!=4&&item.images.length!=1&&item.images.length!=0}}">
+            <view class='picArr' wx:for="{{item.images}}" wx:key="*this" wx:for-item="items">
+              <image bindtap='previewImage' class='pic' src="{{items+'?ys=1'}}" mode="aspectFill" data-list="{{item.images}}" data-src='{{items}}'></image>
+            </view>
+
+          </view>
+          <view class='bottom'>
+            <view class="time">{{item.hdtime}}</view>
+            <view bindtap='previewImage' class="star" bindtap='starOrNot' id="{{index}}" data-hdID="{{item.hdID}}" data-is="{{item.star}}">
+              <image class='starimg' wx:if="{{item.star}}" src='../../image/Connect2.png'></image>
+              <image class='starimg' wx:else src='../../image/Connect1.png'></image>
+              <view class='starNum'>{{item.hddz}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="likeButton" bindtap='guanzhu'> {{likeOrNot==0?'+关注':'取消关注'}}</view>
+
+</view>

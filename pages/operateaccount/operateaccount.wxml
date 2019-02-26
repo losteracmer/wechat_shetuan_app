@@ -1,0 +1,25 @@
+<!--pages/communityLogin/communityLogin.wxml-->
+<view class='main'>
+  <view class='content'>
+    <form catchsubmit="formSubmit" catchreset="formReset">
+      <view class='cell'>
+        <input type='text' class='cellinput up' name='account' placeholder-class='pla' placeholder='账号' value='{{account}}'></input>
+      </view>
+      <view class='cell'>
+        <input type='text' class='cellinput down' name='commname' placeholder-class='pla' placeholder='社团名称' value='{{commname}}'></input>
+      </view>
+      <view class="cell">
+        <input type='text' class='cellinput down' name='password' placeholder-class='pla' placeholder='密码' value='{{"文化体育"}}'></input>
+      </view>
+      <switch bindchange='xiaoquchange' name='xiaoqu'>新区？</switch>
+      <button class="login" formType="submit">
+        <text>ADD</text>
+      </button>
+      <button class="login" formType="reset">
+        <text>reset</text>
+      </button>
+    </form>
+  </view>
+
+
+</view>

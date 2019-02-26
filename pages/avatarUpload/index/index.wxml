@@ -1,0 +1,4 @@
+<view class="container flex">
+  <image src="{{src}}" class="avatar" bindtap="upload"></image>
+  <view class="item flex" bindtap="upload">点击修改社团logo</view>
+</view>

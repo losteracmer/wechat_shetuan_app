@@ -1,0 +1,31 @@
+/* pages/changebri/changebri.wxss */
+.textbox{
+  background-color: white;
+  margin-bottom: 15rpx;
+  border-bottom: 1rpx solid #d0d0d0;
+  height: 500rpx;
+  position: relative;
+}
+
+.con{
+  background-color: white;
+  height: 440rpx;
+  width: 100%;
+}
+
+.tips{
+  color: #888888;
+  padding: 10rpx;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.complete{
+  background-color: #d4a3f5;
+  width: 100%;
+  color: white;
+  font-size: 45rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+}

@@ -1,0 +1,29 @@
+<!--pages/myInfo/myInfo.wxml-->
+<view class='part'>
+  <text class='fuck'>欢迎您的热心反馈</text>
+  <text class='fuck'>为小程提供宝贵的建议和指出存在问题</text>
+</view>
+
+
+
+<form class='part' bindsubmit='submit'>
+  <textarea class='input_area' placeholder='期待您的反馈!' name='text'></textarea>
+  <button form-type='submit' class='submit'>提交</button>
+</form>
+
+<view class='updatemsg' hidden='{{!updatemsg}}'>
+  <view class="kind-list-updatemsg">
+    <view id="{{updatemsg.id}}" class="kind-list-updatemsg-hd {{updatemsg.open ? 'kind-list-updatemsg-hd-show' : ''}}" bindtap="kindToggle">
+      <view class="kind-list-text">{{updatemsg.name}}</view>
+    </view>
+    <view class="kind-list-updatemsg-bd {{updatemsg.open ? 'kind-list-updatemsg-bd-show' : ''}}">
+      <view class="navigator-box {{updatemsg.open ? 'navigator-box-show' : ''}}">
+        <block wx:for="{{updatemsg.text}}" wx:key="*this">
+          <!-- <view class='msgtext'>{{item}}</view> -->
+          <view class="navigator-text">{{item}}</view>
+          <hr></hr>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

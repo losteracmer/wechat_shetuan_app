@@ -1,0 +1,7 @@
+<!--pages/changebri/changebri.wxml-->
+<view class='textbox'>
+  <textarea class='con' maxlength='1000' value='{{text}}' bindinput='input'></textarea>
+  <text class='tips'>{{num}}/{{maxlen}}</text>
+</view>
+
+<button class='complete' bindtap='submit'>完成</button>

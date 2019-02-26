@@ -1,0 +1,29 @@
+/* pages/communityBasicInfo/communityBasicInfo.wxss */
+page{
+  background-color: #eeeeee;
+}
+
+.divs{
+  width:750rpx;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 1rpx solid #dddddd;
+}
+
+.divs text{
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #666666;
+  font-size: 40rpx;
+  margin-left: 30rpx;
+}
+
+.divs image{
+  width: 50rpx;
+  height: 50rpx;
+  opacity: 0.5;
+}

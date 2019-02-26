@@ -1,0 +1,49 @@
+/* pages/sendActivty/sendActivty.wxss */
+page{
+  background-image: none;
+  background-color:#eeeeee;
+}
+
+.page{
+  padding: 20rpx;
+  background-color: white;
+}
+
+.edit{
+  border-radius: 15rpx;
+  margin-bottom: 30rpx;
+}
+
+.text{
+  width: 95%;
+  margin-bottom: 40rpx;
+  font-size: 13pt;
+  padding: 10rpx;
+}
+
+.image{
+  width: 200rpx;
+  height: 200rpx;
+  padding: 2px;
+  background-color: rgb(233, 233, 233);
+  margin: 15rpx;
+  border-radius:30rpx;
+
+}
+
+.moment_img{
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.image_content{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20rpx;
+}
+
+.sendButton{
+  background-color: #d4a3f5;
+  color: white;
+}

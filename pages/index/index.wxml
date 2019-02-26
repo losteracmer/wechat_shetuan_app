@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container" hidden="{{page!=1}}">
+  <view class="userinfo">
+    <button class='userInfoButton' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <view class="top">
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </view>
+      <block class="bottompart" wx:for="{{items}}" wx:for-item="items" wx:key="*this">
+        <view class="bbottomview"  bindtap="toPage{{index}}">
+          <text>{{items}}</text>
+          <image class="arrow" src="../../image/grayarrow-right.png"></image>
+        </view>
+      </block>
+    </block>
+  </view>
+</view>
+
+<view class="container" hidden="{{page!=2}}">
+  <view class="communityInfo">
+    <view class="top">
+      <image class="communityImage" src="{{profile+'?ys=1'}}" mode="cover"></image>
+      <text class="communityName">{{name}}</text>
+    </view>
+    <block class="bottompart" wx:for="{{communityitems}}" wx:for-item="items" wx:key="*this">
+      <view class="bbottomview" bindtap="toCommPage{{index}}">
+        <text>{{items}}</text>
+        <image class="arrow" src="../../image/grayarrow-right.png"></image>
+      </view>
+    </block>
+  </view>
+</view>
+<button hidden="{{page!=2}}" class='logout' bindtap='logout'>退出管理登录</button>

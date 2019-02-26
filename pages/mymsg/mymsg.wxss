@@ -1,0 +1,107 @@
+/* pages/mymsg/mymsg.wxss */
+
+.operateimg{
+  margin: 10rpx;
+  width: 50rpx;
+  height: 50rpx;
+  opacity: 0.5;
+}
+
+.profile{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.card{
+  background-color: white;
+  width: 700rpx;
+  border-radius: 15rpx;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  padding: 15rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.left{
+  width: 570rpx;
+  padding-left: 15rpx;
+}
+
+.top{
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+}
+
+.name{
+  color: #2664b6;
+}
+.waiting{
+  color: #888888;
+}
+
+.accept{
+  color: #25c525;
+}
+
+.deny{
+  color: #dd2a33;
+}
+
+.cgtype{
+  margin-bottom: 10rpx;
+}
+
+.operate{
+  width: 570rpx;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.msg{
+  font-size: 35rpx;
+  color: #6b6b6b
+}
+
+/*  直接拿过来的样式*/
+
+.kind-list-item {
+  margin: 20rpx 0;
+  background-color: #FFFFFF;
+  border-radius: 4rpx;
+  overflow: hidden;
+}
+.kind-list-item:first-child {
+  margin-top: 0;
+}
+.kind-list-text{
+  flex: 1;
+}
+.kind-list-img {
+  margin: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+  opacity: 1;
+}
+.kind-list-item-hd {
+  padding: 30rpx;
+  display: flex;
+  align-items: center;
+
+  transition: opacity .3s;
+}
+.kind-list-item-hd-show {
+  opacity: .2;
+}
+.kind-list-item-bd {
+  height: 0;
+  overflow: hidden;
+}
+.kind-list-item-bd-show {
+  height: auto;
+}

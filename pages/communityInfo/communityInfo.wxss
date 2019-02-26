@@ -1,0 +1,345 @@
+/* pages/communityInfo/communityInfo.wxss */
+page{
+  background-image: none;
+  background-color: white;
+}
+
+.main{
+  background-color: white;
+  height: 100%;
+}
+
+.apply{
+  border-top: 1rpx solid lightgray;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height:100rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  line-height: 100rpx;
+  font-weight: 500;
+}
+
+.press{
+  width: 50%;
+}
+
+.line{
+  border-left: 1rpx solid lightgray;
+  width: 0;
+  height: 80rpx;
+}
+
+.head{
+ height: 400rpx;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ background-size: 100% 100%;
+ background-image: url('http://supersst.com/images/backgroundimage.jpg')
+}
+
+.communityprofile{
+  padding-top: 30rpx;
+  padding-bottom: 10rpx;
+}
+
+.imgProfile{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  border: 1rpx solid lightgray;
+}
+
+.communityname{
+  font-size: larger;
+}
+
+.topword{
+  color: white;
+  margin-top: 30rpx;
+}
+
+.navbar{
+  flex:none;
+  display:  flex;
+  background: #fff;
+}
+
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+  color: lightgray;
+  font-weight: 700;
+}
+
+.navbar .item.active{
+  color: black;
+}
+
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5rpx;
+  background: #d4a3f5;
+}
+
+.page1{
+  display: flex;
+  flex-direction: column;
+  align-content: left;
+  padding-top: 20rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  height: 70%;
+  margin-bottom: 100rpx; 
+}
+.info{
+  padding-top: 0rpx;
+}
+
+.bottitle{
+  font-weight: 500;
+}
+
+.botword{
+  font-weight: 300;
+  color: #6b6b6b
+}
+
+.likeButton{
+  border: 2rpx solid #d4a3f5;
+  border-radius: 8rpx;
+  color: #d4a3f5; 
+  width: 160rpx;
+  height: 60rpx;
+  line-height:60rpx;
+  text-align: center;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
+
+.act{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  border-bottom:1rpx solid #eeeeee; 
+}
+
+.left{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.right{
+  width: 80%;
+}
+
+.name{
+  color: #2664b6;
+  font-weight: 600;
+  margin-bottom: 10rpx;
+}
+
+.text{
+  margin-bottom: 10rpx;
+}
+
+.shortImgs{
+  width: 330rpx;
+}
+
+.picArr{
+  display: inline-block;
+  height: 160rpx;
+  width: 160rpx;
+}
+
+.pic{
+  height: 150rpx;
+  width: 150rpx;
+  margin-right: 10rpx;
+}
+
+.bottom{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time{
+  color: lightgray
+}
+
+.starimg{
+  width: 80rpx;
+  height: 80rpx;
+  margin-right:10rpx; 
+}
+
+/*########直接覆盖##############*/
+
+/* pages/activity/activity.wxss */
+page{
+  background-color: white;
+
+}
+
+.part1{
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.part2{
+  margin-top: 130rpx;
+}
+
+
+
+.act{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-bottom:1rpx solid #eeeeee; 
+}
+
+.left{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.right{
+  width: 80%;
+}
+
+.name{
+  color: #2664b6;
+  font-weight: 600;
+  margin-bottom: 10rpx;
+}
+
+.text{
+  margin-bottom: 10rpx;
+}
+
+.shortImgs{
+  width: 330rpx;
+}
+
+.picArr{
+  display: inline-block;
+  height: 160rpx;
+  width: 160rpx;
+}
+
+.pic{
+  height: 150rpx;
+  width: 150rpx;
+  margin-right: 10rpx;
+}
+
+.bottom{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time{
+  color: #888888;
+}
+
+.star{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right:10rpx; 
+}
+
+.starimg{
+  width: 80rpx;
+  height: 80rpx; 
+}
+
+.picker{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding-bottom: 10rpx;
+}
+
+.pickerText{
+  text-align: center;
+  width: 100rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-bottom: 5rpx solid #6a03af;
+}
+
+.pickerImg{
+  width: 21rpx;
+  height: 15rpx;
+  margin-left: 10rpx;
+}
+
+.picker_chosen{
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.picker_son{
+  padding: 10rpx;
+  padding-right: 35rpx;
+}
+
+.picone{
+  width:300rpx;
+  height: 300rpx;
+  margin-right: 10rpx;
+}
+
+.starNum{
+  color: #888888;
+}

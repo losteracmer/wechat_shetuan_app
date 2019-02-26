@@ -1,0 +1,15 @@
+<!--pages/communityManager/communityManager.wxml-->
+<view class="container">
+  <view class="communityInfo">
+    <view class="top">
+      <image class="communityImage" src="{{profile}}" mode="cover"></image>
+      <text class="communityName">{{name}}</text>
+    </view>
+    <block class="bottompart" wx:for="{{items}}" wx:for-item="items" wx:key="*this">
+      <view class="bbottomview" bindtap="toPage{{index}}">
+        <text>{{items}}</text>
+        <image class="arrow" src="../../image/grayarrow-right.png"></image>
+      </view>
+    </block>
+  </view>
+</view>

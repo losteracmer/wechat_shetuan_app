@@ -1,0 +1,42 @@
+<view class='main'>
+  <view class="search">
+    <icon class="searchcion" size='20' type='search' bindtap='search'></icon>
+    <input placeholder="请输入关键字" placeholder-class='plakey' value="{{searchValue}}" bindinput="bindKeyInput"  bindconfirm="search" />
+  </view>
+
+  <view class='history' hidden='{{isSearch}}'>
+
+    <view class='his_top'>
+      <view class='sousuoHistoryText'>搜索历史</view>
+      <image class='delect' src='../../image/delect.png' bindtap='delecthistory'></image>
+    </view>
+
+    <view class='his_bot'>
+      <block wx:for="{{searchHistory}}" wx:for-item="sh" wx:key="*this">
+        <view class='sh' data-sh="{{sh}}" bindtap='putsh'>{{sh}}</view>
+      </block>
+    </view>
+  </view>
+
+  <view class='result' hidden='{{!isSearch}}'>
+
+    <block wx:for="{{comm}}" wx:for-item="comm" wx:key="*this">
+      <view class="card">
+        <view class="cardcon" bindtap='gotodetail' id='{{index}}'>
+          <image class="cardImage" src="{{comm.profile+'?ys=1'}}" mode="scaleToFill"></image>
+          <view class="textcon">
+            <view class="cardName textover">
+              {{comm.name}}
+            </view>
+            <view class="cardWords textover">
+              {{comm.brief}}
+            </view>
+            <view class='xiaoqu'>
+              <text>{{comm.xiaoqu}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+<!--pages/sendActivty/sendActivty.wxml-->
+<view class='page'>
+  <view class='edit'>
+    <textarea class='text' bindinput='input' placeholder="" auto-height/>
+    <view class="image_content">
+      <view class='image' wx:for="{{img_url}}" wx:key="*this">
+        <image bindtap='deleteimage' data-idx="{{index}}" class='moment_img' src='{{item}}' mode="aspectFill"></image>
+      </view>
+      <view class='image' style='display:{{hideAdd?"none":"block"}};opacity:0.5'>
+        <image bindtap="chooseimage" class="moment_img" src="../../image/add.png"></image>
+      </view>
+    </view>
+  </view>
+  <button class="sendButton" bindtap='send' style='margin-right:5rpx;margin-left:5rpx'>提交</button>
+</view>

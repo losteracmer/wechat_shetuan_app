@@ -1,0 +1,172 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.4",
+	"appid": "wxa32880bd5ddc2a31",
+	"projectname": "%E7%A4%BE%E5%9B%A2%E9%A1%B9%E7%9B%AE1.0.2",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 20,
+			"list": [
+				{
+					"id": -1,
+					"name": "社团",
+					"pathName": "pages/community/community",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "活动",
+					"pathName": "pages/activity/activity",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "社团详情",
+					"pathName": "pages/communityInfo/communityInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "社团登陆",
+					"pathName": "pages/communityLogin/communityLogin",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": 7,
+					"name": "发布活动页面",
+					"pathName": "pages/sendActivity/sendActivity",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "修改密码",
+					"pathName": "pages/changePassword/changePassword",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "搜索页",
+					"pathName": "pages/search/search",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "管理社团详情",
+					"pathName": "pages/communityBasicInfo/communityBasicInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "头像设置",
+					"pathName": "pages/avatarUpload/index/index",
+					"query": ""
+				},
+				{
+					"id": 11,
+					"name": "社团信息",
+					"pathName": "pages/communityBasicInfo/communityBasicInfo",
+					"query": "id=000000001"
+				},
+				{
+					"id": -1,
+					"name": "社团基本信息",
+					"pathName": "pages/communityBasicInfo/communityBasicInfo",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "修改联系信息",
+					"pathName": "pages/changecon/changecon",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "我的动态",
+					"pathName": "pages/myActivity/myActivity",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "反馈",
+					"pathName": "pages/myInfo/myInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的活动",
+					"pathName": "pages/search/search",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的活动",
+					"pathName": "pages/myActivity/myActivity",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "社团修改信息提醒",
+					"pathName": "pages/mymsg/mymsg",
+					"query": "id=00000001&account=sst",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "社团信息一览表",
+					"pathName": "pages/communityTable/communityTable",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "审核页",
+					"pathName": "pages/mymsg/mymsg",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "1账号管理",
+					"pathName": "pages/operateaccount/operateaccount"
+				}
+			]
+		}
+	}
+}

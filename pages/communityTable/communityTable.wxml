@@ -1,0 +1,9 @@
+<!--pages/communityTable/communityTable.wxml-->
+<view class='title'>河南大学社团一览表</view>
+<view wx:for="{{commtable}}" wx:key="*this">
+  <view class='item' bindtap='gotodetail' data-id = "{{item.id}}">
+    <view class='name'>{{item.name}}</view>
+    <view class='kinds'>|{{item.kinds}}|</view>
+    <view class='xiaoqu'>[{{item.xiaoqu}}]</view>
+  </view>
+</view>
